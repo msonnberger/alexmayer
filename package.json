@@ -1,0 +1,16 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch src/sass:src/sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.mediacube.at/fhs45907/cms-2021-sonnberger_rinnerberger.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
