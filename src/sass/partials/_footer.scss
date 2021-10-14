@@ -1,0 +1,30 @@
+@import 'variables';
+
+footer {
+  background: $primary-color;
+  color: white;
+  margin-top: 5rem;
+
+  .max-width-container {
+    padding: 2rem;
+
+    p {
+      font-size: $text-font-size;
+      word-wrap: break-all;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      nav {
+        text-align: right;
+      }
+
+      a {
+        color: white;
+        font-size: $text-font-size
+      }
+    }
+  }
+}
