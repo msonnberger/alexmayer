@@ -1,0 +1,13 @@
+@import 'variables';
+
+section#news {
+  ul {
+    background: #f8e2d7;
+    border-radius: $border-radius;
+    padding: 0.3rem;
+
+    li {
+      padding: 0.5rem;
+    }
+  }
+}

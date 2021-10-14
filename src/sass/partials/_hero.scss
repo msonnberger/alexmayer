@@ -1,0 +1,15 @@
+@import 'variables';
+
+section#hero {
+  background-image: url('images/illuminated-keyboard.jpg');
+
+  h2 {
+    box-decoration-break: clone;
+    background: white;
+  }
+
+  button {
+    background: #3fa535;
+    color: white;
+  }
+}
