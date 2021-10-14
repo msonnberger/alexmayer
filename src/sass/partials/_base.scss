@@ -1,0 +1,28 @@
+@import 'variables';
+
+html {
+  font-size: 80%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 1.2em 0;
+}
+
+h1, h2, a {
+  color: $primary-color;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+.max-width-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
