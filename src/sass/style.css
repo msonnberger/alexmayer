@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* slabo-13px-regular - latin */
+@font-face {
+  font-family: "Slabo 13px";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/slabo-13px-v8-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/slabo-13px-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/slabo-13px-v8-latin-regular.woff2") format("woff2"), url("../fonts/slabo-13px-v8-latin-regular.woff") format("woff"), url("../fonts/slabo-13px-v8-latin-regular.ttf") format("truetype"), url("../fonts/slabo-13px-v8-latin-regular.svg#Slabo13px") format("svg");
+  /* Legacy iOS */
+}
+html {
+  font-size: 80%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 1.2em 0;
+}
+
+h1, h2, a {
+  color: #009ee3;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+.max-width-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+footer {
+  background: #009ee3;
+  color: white;
+  margin-top: 5rem;
+}
+footer .max-width-container {
+  padding: 2rem;
+}
+footer .max-width-container p {
+  font-size: 1.6em;
+  word-wrap: break-all;
+}
+footer .max-width-container .footer-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer .max-width-container .footer-top nav {
+  text-align: right;
+}
+footer .max-width-container .footer-top a {
+  color: white;
+  font-size: 1.6em;
+}
+
+section#clients .clients-grid {
+  height: 35rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  font-size: 1.6em;
+}
+section#clients .clients-grid article {
+  display: grid;
+}
+section#clients .clients-grid img {
+  object-fit: cover;
+}
+section#clients .clients-grid .client-tina, section#clients .clients-grid .client-tom {
+  height: inherit;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+section#clients .clients-grid .client-tina {
+  background: #fffbdb;
+  grid-column: 1/4;
+  grid-row: 1/-1;
+}
+section#clients .clients-grid .client-tina img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: 100%;
+  width: 100%;
+  padding: 0.5em;
+}
+section#clients .clients-grid .client-tina .client-info {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+section#clients .clients-grid .client-tina blockquote {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  align-self: end;
+  padding-top: 21%;
+  padding-bottom: 0.5em;
+}
+section#clients .clients-grid .client-tina > * {
+  background: inherit;
+  z-index: 3;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+}
+section#clients .clients-grid .client-tom {
+  grid-column: 2/5;
+  grid-row: 1/-1;
+  background: #d4edfc;
+  z-index: 2;
+}
+section#clients .clients-grid .client-tom img {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  height: calc(100% - 0.5em);
+  width: 100%;
+}
+section#clients .clients-grid .client-tom .client-info {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  justify-self: end;
+  text-align: right;
+  padding-right: 0.5em;
+}
+section#clients .clients-grid .client-tom blockquote {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  padding-left: 0.5em;
+}
+section#clients .clients-grid .client-tom > * {
+  padding-top: 0.5em;
+}
+section#clients .clients-grid .client-mueller {
+  background: #e2edd8;
+  width: 40rem;
+  height: inherit;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column: 5/9;
+  grid-row: 1/-1;
+  z-index: 3;
+}
+section#clients .clients-grid .client-mueller img {
+  grid-column: 2/5;
+  grid-row: 1/3;
+  height: calc(100% - 0.5em);
+  width: calc(100% - 1em);
+  padding: 0.5em 0.5em 0 0.5em;
+}
+section#clients .clients-grid .client-mueller .client-info {
+  grid-column: 1/5;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+}
+section#clients .clients-grid .client-mueller .client-info cite, section#clients .clients-grid .client-mueller .client-info p {
+  align-self: flex-end;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+}
+section#clients .clients-grid .client-mueller .client-info blockquote {
+  margin-top: auto;
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+}
+section#clients .clients-grid .quotation-mark {
+  background: #009ee3;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column: 5/6;
+  grid-row: 1/3;
+  z-index: 4;
+}
+section#clients .clients-grid .quotation-mark img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  max-width: 80%;
+  margin: 1.5em auto 0 auto;
+}
+
+section#news ul {
+  background: #f8e2d7;
+  border-radius: 3px;
+  padding: 0.3rem;
+}
+section#news ul li {
+  padding: 0.5rem;
+}
+
+section#hero {
+  background-image: url("images/illuminated-keyboard.jpg");
+}
+section#hero h2 {
+  box-decoration-break: clone;
+  background: white;
+}
+section#hero button {
+  background: #3fa535;
+  color: white;
+}
+
+body {
+  font-family: "Slabo 13px";
+}
+
+/*# sourceMappingURL=style.css.map */
