@@ -1,0 +1,34 @@
+@import 'variables';
+
+section#top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2em;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+
+  nav ul {
+    display: flex;
+    font-size: 1.8em;
+
+    li {
+      margin: 0 .3em;
+    }
+
+    a {
+      color: black;
+      cursor: pointer;
+      transition: color 100ms;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      &.active {
+        color: $primary-color;
+        border-bottom: 2px solid $primary-color;
+      }
+    }
+  }
+}

@@ -67,6 +67,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Slabo 13px";
+}
+
 h1 {
   font-size: 48px;
 }
@@ -89,28 +93,53 @@ section {
   margin: 0 auto;
 }
 
-footer {
-  background: #009ee3;
+section#top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2em;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+}
+section#top-nav nav ul {
+  display: flex;
+  font-size: 1.8em;
+}
+section#top-nav nav ul li {
+  margin: 0 0.3em;
+}
+section#top-nav nav ul a {
+  color: black;
+  cursor: pointer;
+  transition: color 100ms;
+}
+section#top-nav nav ul a:hover {
+  color: #009ee3;
+}
+section#top-nav nav ul a.active {
+  color: #009ee3;
+  border-bottom: 2px solid #009ee3;
+}
+
+section#hero {
+  background-image: url("images/illuminated-keyboard.jpg");
+}
+section#hero h2 {
+  box-decoration-break: clone;
+  background: white;
+}
+section#hero button {
+  background: #3fa535;
   color: white;
-  margin-top: 5rem;
 }
-footer .max-width-container {
-  padding: 2rem;
+
+section#news ul {
+  background: #f8e2d7;
+  border-radius: 3px;
+  padding: 0.3rem;
 }
-footer .max-width-container p {
-  font-size: 1.6em;
-  word-wrap: break-all;
-}
-footer .max-width-container .footer-top {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-footer .max-width-container .footer-top nav {
-  text-align: right;
-}
-footer .max-width-container .footer-top a {
-  color: white;
-  font-size: 1.6em;
+section#news ul li {
+  padding: 0.5rem;
 }
 
 section#clients .clients-grid {
@@ -237,29 +266,28 @@ section#clients .clients-grid .quotation-mark img {
   margin: 1.5em auto 0 auto;
 }
 
-section#news ul {
-  background: #f8e2d7;
-  border-radius: 3px;
-  padding: 0.3rem;
-}
-section#news ul li {
-  padding: 0.5rem;
-}
-
-section#hero {
-  background-image: url("images/illuminated-keyboard.jpg");
-}
-section#hero h2 {
-  box-decoration-break: clone;
-  background: white;
-}
-section#hero button {
-  background: #3fa535;
+footer {
+  background: #009ee3;
   color: white;
+  margin-top: 5rem;
 }
-
-body {
-  font-family: "Slabo 13px";
+footer .max-width-container {
+  padding: 2rem;
+}
+footer .max-width-container p {
+  font-size: 1.6em;
+  word-wrap: break-all;
+}
+footer .max-width-container .footer-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer .max-width-container .footer-top nav {
+  text-align: right;
+}
+footer .max-width-container .footer-top a {
+  color: white;
+  font-size: 1.6em;
 }
 
 /*# sourceMappingURL=style.css.map */

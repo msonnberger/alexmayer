@@ -1,12 +1,12 @@
+// basics
 @use 'partials/reset';
 @use 'partials/fonts';
 @use 'partials/base';
-@use 'partials/footer';
-@use 'partials/clients';
-@use 'partials/news';
+
+// sections
+@use 'partials/top-nav';
 @use 'partials/hero';
-
-
-body {
-  font-family: 'Slabo 13px';
-}
+//@use 'partials/services/';
+@use 'partials/news';
+@use 'partials/clients';
+@use 'partials/footer';
