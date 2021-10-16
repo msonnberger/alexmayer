@@ -3,6 +3,9 @@
 @use 'partials/fonts';
 @use 'partials/base';
 
+//extras
+@use 'hamburgers/hamburgers';
+
 // sections
 @use 'partials/top-nav';
 @use 'partials/hero';
@@ -10,6 +13,3 @@
 @use 'partials/news';
 @use 'partials/clients';
 @use 'partials/footer';
-
-//extras
-@use 'hamburgers/hamburgers';
