@@ -1404,7 +1404,6 @@ footer .max-width-container li {
 footer .max-width-container a {
   color: white;
   text-decoration: none;
-  margin: 0.5em 0;
 }
 footer .max-width-container a:hover {
   text-decoration: underline;
@@ -1415,6 +1414,7 @@ footer .max-width-container .footer-top {
 }
 footer .max-width-container .footer-top nav {
   text-align: right;
+  margin: 0.5em 0;
 }
 footer .max-width-container .footer-top ul {
   list-style-type: none;

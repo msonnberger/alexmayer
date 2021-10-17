@@ -38,7 +38,6 @@ footer {
     a {
       color: white;
       text-decoration: none;
-      margin: 0.5em 0;
 
       &:hover {
         text-decoration: underline;
@@ -51,6 +50,7 @@ footer {
 
       nav {
         text-align: right;
+        margin: 0.5em 0;
       }
 
       ul {
