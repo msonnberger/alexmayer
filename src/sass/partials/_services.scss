@@ -56,4 +56,26 @@ section#services {
       background-position-y: 4em;
     }
   }
+
+  @media screen and (max-width: $bp-desktop) {
+
+    ul {
+      flex-direction: column;
+    }
+
+    li {
+      &.services-design {
+        background-size: 50%;
+      }
+
+      &.services-strategy {
+        background-size: 50%;
+      }
+
+      &.services-consulting {
+        background-size: 50%;
+      }
+    }
+
+  }
 }

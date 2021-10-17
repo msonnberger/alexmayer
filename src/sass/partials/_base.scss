@@ -12,6 +12,10 @@ body {
 
 h1 {
   font-size: 48px;
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 42px;
+  }
 }
 
 h2 {
@@ -30,4 +34,13 @@ section {
 .max-width-container {
   max-width: 80rem;
   margin: 0 auto;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 0 1em;
+  }
 }
+
+button {
+  font-family: 'Slabo 13px';
+}
+
