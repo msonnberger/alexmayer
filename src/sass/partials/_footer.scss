@@ -12,6 +12,7 @@ footer {
       font-size: $text-font-size;
       word-wrap: break-all;
       color: white;
+      margin: 0.5em 0;
     }
 
     h2 {
@@ -67,7 +68,43 @@ footer {
       @media screen and (max-width: $bp-desktop) {
 
         display: block;
+
+        nav {
+          text-align: left;
+
+          ul {
+            padding: 0;
+            margin-bottom: 1em;
+
+            li {
+              font-size: 1.4em;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: $bp-desktop) {
+
+      padding: 1em;
+
+      p {
+        font-size: 1.4em;
+      }
+
+      h2 {
+        font-size: 1.6em;
+      }
+
+      ul {
+        padding: 1em;
+      }
+
+      li {
+        font-size: 10px;
+        word-break: break-all;
       }
     }
   }
+
 }

@@ -1383,6 +1383,7 @@ footer .max-width-container p {
   font-size: 1.6em;
   word-wrap: break-all;
   color: white;
+  margin: 0.5em 0;
 }
 footer .max-width-container h2 {
   color: white;
@@ -1427,6 +1428,34 @@ footer .max-width-container .footer-top a:hover {
 @media screen and (max-width: 1050px) {
   footer .max-width-container .footer-top {
     display: block;
+  }
+  footer .max-width-container .footer-top nav {
+    text-align: left;
+  }
+  footer .max-width-container .footer-top nav ul {
+    padding: 0;
+    margin-bottom: 1em;
+  }
+  footer .max-width-container .footer-top nav ul li {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 1050px) {
+  footer .max-width-container {
+    padding: 1em;
+  }
+  footer .max-width-container p {
+    font-size: 1.4em;
+  }
+  footer .max-width-container h2 {
+    font-size: 1.6em;
+  }
+  footer .max-width-container ul {
+    padding: 1em;
+  }
+  footer .max-width-container li {
+    font-size: 10px;
+    word-break: break-all;
   }
 }
 
