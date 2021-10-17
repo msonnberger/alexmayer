@@ -8,6 +8,15 @@ section#news {
 
     li {
       padding: 0.5rem;
+      font-size: $text-font-size;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

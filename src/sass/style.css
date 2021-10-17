@@ -78,7 +78,7 @@ h1 {
 
 h2 {
   font-size: 32px;
-  margin: 1.2em 0;
+  margin: 1.2em 0 1em 0;
 }
 
 h1, h2, a {
@@ -1033,6 +1033,13 @@ section#news ul {
 }
 section#news ul li {
   padding: 0.5rem;
+  font-size: 1.6em;
+}
+section#news ul a {
+  text-decoration: none;
+}
+section#news ul a:hover {
+  text-decoration: underline;
 }
 
 section#clients .clients-grid {
@@ -1286,6 +1293,10 @@ footer .max-width-container li {
 }
 footer .max-width-container a {
   color: white;
+  text-decoration: none;
+}
+footer .max-width-container a:hover {
+  text-decoration: underline;
 }
 footer .max-width-container .footer-top {
   display: grid;
@@ -1300,8 +1311,9 @@ footer .max-width-container .footer-top ul {
 footer .max-width-container .footer-top li {
   font-size: 1.6em;
 }
-footer .max-width-container .footer-top a {
+footer .max-width-container .footer-top a:hover {
   text-decoration: none;
+  border-bottom: 2px solid;
 }
 
 /*# sourceMappingURL=style.css.map */
