@@ -1026,9 +1026,58 @@ section#hero button {
   color: white;
 }
 
+section#services ul {
+  width: 100%;
+  display: flex;
+  gap: 2.5em;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section#services li {
+  width: 100%;
+  height: 15em;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.6em;
+}
+section#services li a {
+  display: block;
+  text-decoration: none;
+  padding-top: 1.5em;
+  width: 100%;
+  height: 90%;
+}
+section#services li a:hover {
+  font-weight: bold;
+}
+section#services li.services-design {
+  background: #fffbdb;
+  background-image: url("../images/design.svg");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 4em;
+}
+section#services li.services-strategy {
+  background: #d4edfc;
+  background-image: url("../images/strategy.svg");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 4em;
+}
+section#services li.services-consulting {
+  background: #e2edd8;
+  background-image: url("../images/consulting.svg");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 4em;
+}
+
 section#news ul {
   background: #f8e2d7;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 0.8rem;
 }
 section#news ul li {

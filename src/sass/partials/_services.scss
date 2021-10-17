@@ -1,0 +1,59 @@
+@import 'variables';
+
+section#services {
+
+  ul {
+    width: 100%;
+    display: flex;
+    gap: 2.5em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  li {
+    width: 100%;
+    height: 15em;
+    text-align: center;
+    border-radius: $border-radius;
+    font-size: $text-font-size;
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding-top: 1.5em;
+      width: 100%;
+      height: 90%;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+
+    &.services-design {
+      background: #fffbdb;
+      background-image: url('../images/design.svg');
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 4em;
+    }
+
+    &.services-strategy {
+      background: #d4edfc;
+      background-image: url('../images/strategy.svg');
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 4em;
+    }
+
+    &.services-consulting {
+      background: #e2edd8;
+      background-image: url('../images/consulting.svg');
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 4em;
+    }
+  }
+}
