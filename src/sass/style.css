@@ -1029,10 +1029,10 @@ section#hero button {
 section#news ul {
   background: #f8e2d7;
   border-radius: 3px;
-  padding: 0.3rem;
+  padding: 0.8rem;
 }
 section#news ul li {
-  padding: 0.5rem;
+  padding: 0.3rem;
   font-size: 1.6em;
 }
 section#news ul a {
