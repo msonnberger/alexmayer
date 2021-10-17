@@ -1,166 +1,159 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="sass/style.css">
-    <script src="js/script.js" defer></script>
-    <title>Alex Mayer</title>
-  </head>
-  <body>
-    <header>
-      <section id="top-nav">
-        <h1>Alex Mayer</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="sass/style.css">
+  <script src="js/script.js" defer></script>
+  <title>Alex Mayer</title>
+</head>
+
+<body>
+  <header>
+    <section id="top-nav">
+      <h1>Alex Mayer</h1>
+      <nav>
+        <ul>
+          <li><a class="active">Start</a></li>
+          <li><a>Leistungen</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Über mich</a></li>
+          <li><a>Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger hamburger--slider" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </section>
+
+    <section id="hero">
+      <h2>Glänzende Ideen für leuchtende Augen</h2>
+      <button>Angebot einholen</button>
+    </section>
+  </header>
+
+  <main>
+    <section id="services" class="max-width-container">
+      <h2>Leistungen</h2>
+      <ul>
+        <li><a>Design</a></li>
+        <li><a>Strategie</a></li>
+        <li><a>Consulting</a></li>
+      </ul>
+    </section>
+
+    <section id="news" class="max-width-container">
+      <h2>News</h2>
+      <ul>
+        <li>
+          <a>Postkarten</a>
+          - Eine Liebeserklärung für jeden Tag!
+          <a>[mehr erfahren]</a>
+        </li>
+        <li>
+          <a>Award-Nominierung</a>
+          - Tolle News: ich bin bei der Endauswahl 2020!
+          <a>[mehr erfahren]</a>
+        </li>
+        <li>
+          <a>CMYK erklärt</a>
+          - der neueste <a>Blog</a>-Eintrag!
+          <a>[mehr erfahren]</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="clients" class="max-width-container">
+      <h2>Referenzen</h2>
+      <div class="clients-grid">
+        <article class="client-tina">
+          <img src="images/dina-meyer.jpg" alt="Tina Ubuntu" class="testimonial" />
+          <div class="client-info">
+            <cite>Tina Ubuntu</cite>
+            <p>CEO headless Ltd.</p>
+          </div>
+          <blockquote>
+            Alex‘ Redesign hat maßgeblich mitgeholfen, unseren Umsatz um 20% in
+            die Hohe zu treiben!
+          </blockquote>
+        </article>
+        <article class="client-tom">
+          <img src="images/thomas-meyer.jpg" alt="Tom Mayer" class="testimonial" />
+          <div class="client-info">
+            <cite>Tom Herzog</cite>
+            <p>Cutter‘s Finest</p>
+          </div>
+          <blockquote>Große Webkunst – keine Kunst mit Alex Mayer!</blockquote>
+        </article>
+        <article class="client-mueller">
+          <img src="images/vorstand.jpg" alt="Vorstand der Müller AG" class="testimonial" />
+          <div class="client-info">
+            <p>Vorstand Müller AG</p>
+            <cite>KR Ernst Anker, Dr. Florian Eisner</cite>
+            <blockquote>
+              Das Store-Konzept von Alex Mayer hat unsere größten Erwartungen
+              übertroffen.
+            </blockquote>
+          </div>
+        </article>
+        <article class="quotation-mark">
+          <img src="images/quotation_mark.svg" alt="Zitatzeichen" />
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="max-width-container">
+      <div class="footer-top">
+        <p>
+          © Alex Mayer 2020
+          <br><br>
+          Demo Wordpress Seite im Rahmen der LV 'Content Management Systeme' an
+          der FH Salzburg von Markus Rinnerberger und Martin Sonnberger.
+          <br>
+          <br>
+          Alle Inhalte sind frei erfunden.
+        </p>
         <nav>
           <ul>
-            <li><a class="active">Start</a></li>
-            <li><a>Leistungen</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Über mich</a></li>
-            <li><a>Kontakt</a></li>
+            <li><a href="impressum.html">Impressum</a> | <a href="dataprotection.html">Datenschutzerklärung</a></li>
           </ul>
         </nav>
-        <button class="hamburger hamburger--slider" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button> 
-      </section>
-
-      <section id="hero">
-        <h2>Glänzende Ideen für leuchtende Augen</h2>
-        <button>Angebot einholen</button>
-      </section>
-    </header>
-
-    <main>
-      <section id="services" class="max-width-container">
-        <h2>Leistungen</h2>
-        <ul>
-          <li><a>Design</a></li>
-          <li><a>Strategie</a></li>
-          <li><a>Consulting</a></li>
-        </ul>
-      </section>
-
-      <section id="news" class="max-width-container">
-        <h2>News</h2>
-        <ul>
-          <li>
-            <a>Postkarten</a>
-            - Eine Liebeserklärung für jeden Tag!
-            <a>[mehr erfahren]</a>
-          </li>
-          <li>
-            <a>Award-Nominierung</a>
-            - Tolle News: ich bin bei der Endauswahl 2020!
-            <a>[mehr erfahren]</a>
-          </li>
-          <li>
-            <a>CMYK erklärt</a>
-            - der neueste <a>Blog</a>-Eintrag!
-            <a>[mehr erfahren]</a>
-          </li>
-        </ul>
-      </section>
-
-      <section id="clients" class="max-width-container">
-        <h2>Referenzen</h2>
-        <div class="clients-grid">
-          <article class="client-tina">
-            <img src="images/dina-meyer.jpg" alt="Tina Ubuntu" class="testimonial"/>
-            <div class="client-info">
-              <cite>Tina Ubuntu</cite>
-              <p>CEO headless Ltd.</p>
-            </div>
-            <blockquote>
-              Alex‘ Redesign hat maßgeblich mitgeholfen, unseren Umsatz um 20% in
-              die Hohe zu treiben!
-            </blockquote>
-          </article>
-          <article class="client-tom">
-            <img src="images/thomas-meyer.jpg" alt="Tom Mayer" class="testimonial" />
-            <div class="client-info">
-              <cite>Tom Herzog</cite>
-              <p>Cutter‘s Finest</p>
-            </div>
-            <blockquote>Große Webkunst – keine Kunst mit Alex Mayer!</blockquote>
-          </article>
-          <article class="client-mueller">  
-            <img src="images/vorstand.jpg" alt="Vorstand der Müller AG" class="testimonial"/>
-            <div class="client-info">
-              <p>Vorstand Müller AG</p>
-              <cite>KR Ernst Anker, Dr. Florian Eisner</cite>
-              <blockquote>
-                Das Store-Konzept von Alex Mayer hat unsere größten Erwartungen
-                übertroffen.
-              </blockquote>
-          </div>
-          </article>
-          <article class="quotation-mark">
-            <img src="images/quotation_mark.svg" alt="Zitatzeichen"/>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="max-width-container">
-        <div class="footer-top">
-          <p>
-            © Alex Mayer 2020
-            <br><br>
-            Demo Wordpress Seite im Rahmen der LV 'Content Management Systeme' an
-            der FH Salzburg von Markus Rinnerberger und Martin Sonnberger.
-            <br>
-            <br>
-            Alle Inhalte sind frei erfunden.
-        </p>
-          <nav>
-            <ul>
-              <li><a>Impressum</a> | <a>Datenschutzerklärung</a></li>
-            </ul>
-          </nav>
-        </div>
-        <h3>Bildnachweis</h3>
-        <h4>Fotos</h4>
-        <ul>
-          <li>
-            Herefoto Tastatur: Aman Anderson,
-            <a href="http://de.freeimages.com/photo/illuminated-keyboard-124228"
-              >http://de.freeimages.com/photo/illuminated-keyboard-124228</a
-            >
-          </li>
-          <li>
-            Foto Dina Meyer by Dreifachaxe<a
-              href="https://creativecommons.org/licenses/by-sa/4.0"
-              >https://creativecommons.org/licenses/by-sa/4.0</a
-            >
-          </li>
-          <li>
-            Foto Thomas Meyer-Hermann By Thomas Meyer-Hermann (Thomas
-            Meyer-Hermann<a
-              href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Thomas_Meyer-Hermann_1.jpg/407px-Thomas_Meyer-Hermann_1.jpg"
-              >https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Thomas_Meyer-Hermann_1.jpg/407px-Thomas_Meyer-Hermann_1.jpg</a
-            >
-          </li>
-          <li>
-            Foto Vorstand Sparkasse Ülzen [[File:SKUelzen Vorstand
-            2015.jpg|SKUelzen Vorstand 2015<a
-              href="https://upload.wikimedia.org/wikipedia/commons/3/3e/SKUelzen_Vorstand_2015.jpg"
-              >https://upload.wikimedia.org/wikipedia/commons/3/3e/SKUelzen_Vorstand_2015.jpg</a
-            >
-          </li>
-        </ul>
-        <h4>Icons</h4>
-        <ul>
-          <li>
-            Freepik<a href="http://www.freepik.com">http://www.freepik.com</a>
-          </li>
-          <li><a href="www.flaticon.com">www.flaticon.com</a></li>
-        </ul>
       </div>
-    </footer>
-  </body>
+      <h2>Bildnachweis</h2>
+      <h3>Fotos</h3>
+      <ul>
+        <li>
+          Herefoto Tastatur: Aman Anderson, <a
+            href="http://de.freeimages.com/photo/illuminated-keyboard-124228">http://de.freeimages.com/photo/illuminated-keyboard-124228</a>
+        </li>
+        <li>
+          Foto Dina Meyer by Dreifachaxe, <a
+            href="https://creativecommons.org/licenses/by-sa/4.0">https://creativecommons.org/licenses/by-sa/4.0</a>
+        </li>
+        <li>
+          Foto Thomas Meyer-Hermann By Thomas Meyer-Hermann, <a
+            href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Thomas_Meyer-Hermann_1.jpg/407px-Thomas_Meyer-Hermann_1.jpg">https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Thomas_Meyer-Hermann_1.jpg/407px-Thomas_Meyer-Hermann_1.jpg</a>
+        </li>
+        <li>
+          Foto Vorstand Sparkasse Ülzen, <a
+            href="https://upload.wikimedia.org/wikipedia/commons/3/3e/SKUelzen_Vorstand_2015.jpg">https://upload.wikimedia.org/wikipedia/commons/3/3e/SKUelzen_Vorstand_2015.jpg</a>
+        </li>
+      </ul>
+      <h3>Icons</h3>
+      <ul>
+        <li>
+          Freepik, <a href="http://www.freepik.com">http://www.freepik.com</a>
+        </li>
+        <li><a href="www.flaticon.com">www.flaticon.com</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
