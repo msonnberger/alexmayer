@@ -1383,7 +1383,7 @@ footer .max-width-container p {
   font-size: 1.6em;
   word-wrap: break-all;
   color: white;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 footer .max-width-container h2 {
   color: white;
@@ -1414,7 +1414,7 @@ footer .max-width-container .footer-top {
 }
 footer .max-width-container .footer-top nav {
   text-align: right;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 footer .max-width-container .footer-top ul {
   list-style-type: none;
