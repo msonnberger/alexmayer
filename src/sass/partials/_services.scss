@@ -65,15 +65,15 @@ section#services {
 
     li {
       &.services-design {
-        background-size: 50%;
+        background-size: min(50%, 200px);
       }
 
       &.services-strategy {
-        background-size: 50%;
+        background-size: min(50%, 200px);
       }
 
       &.services-consulting {
-        background-size: 50%;
+        background-size: min(50%, 200px);
       }
     }
 
