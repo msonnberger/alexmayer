@@ -1015,15 +1015,34 @@ section#top-nav nav ul a.active {
   }
 }
 section#hero {
-  background-image: url("images/illuminated-keyboard.jpg");
+  background-image: url("../images/illuminated-keyboard.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5em;
 }
-section#hero h2 {
+section#hero p {
+  color: #009ee3;
+  display: inline-block;
   box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
   background: white;
+  margin: 0.1em 0 0.1em 55%;
+  padding: 0.1em 0.3em;
+  font-size: 48px;
 }
 section#hero button {
   background: #3fa535;
   color: white;
+  border-radius: 5px;
+  border: transparent;
+  font-size: 32px;
+  padding: 0.5em;
+  margin-top: 0.4em;
+  margin-left: 55%;
+}
+section#hero button:hover {
+  cursor: pointer;
 }
 
 section#services ul {
