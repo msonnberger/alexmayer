@@ -1381,7 +1381,6 @@ footer .max-width-container {
 }
 footer .max-width-container p {
   font-size: 1.6em;
-  word-wrap: break-all;
   color: white;
   margin: 0.5rem 0;
 }
