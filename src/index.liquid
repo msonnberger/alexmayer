@@ -1,0 +1,80 @@
+---
+layout: main
+---
+
+<main>
+  <section id="services" class="max-width-container">
+    <h2>Leistungen</h2>
+    <ul>
+      <li class="services-design"><a href="">Design</a></li>
+      <li class="services-strategy"><a href="">Strategie</a></li>
+      <li class="services-consulting"><a href="">Consulting</a></li>
+    </ul>
+  </section>
+
+  <section id="news" class="max-width-container">
+    <h2>News</h2>
+    <ul>
+      {% assign news = collections.news | reverse %} {% for n in news limit:3 %}
+
+      <li>
+        <a href="{{ n.url }}">{{ n.data.title }}</a>
+        - {{ n.data.excerpt }}
+        <a href="{{ n.url }}">[mehr erfahren]</a>
+      </li>
+
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="clients" class="max-width-container">
+    <h2>Referenzen</h2>
+    <div class="clients-grid">
+      <article class="client-tina">
+        <img
+          src="images/dina-meyer.jpg"
+          alt="Tina Ubuntu"
+          class="testimonial"
+        />
+        <div class="client-info">
+          <cite>Tina Ubuntu</cite>
+          <p>CEO headless Ltd.</p>
+        </div>
+        <blockquote>
+          Alex‘ Redesign hat maßgeblich mitgeholfen, unseren Umsatz um 20% in
+          die Hohe zu treiben!
+        </blockquote>
+      </article>
+      <article class="client-tom">
+        <img
+          src="images/thomas-meyer.jpg"
+          alt="Tom Mayer"
+          class="testimonial"
+        />
+        <div class="client-info">
+          <cite>Tom Herzog</cite>
+          <p>Cutter‘s Finest</p>
+        </div>
+        <blockquote>Große Webkunst – keine Kunst mit Alex Mayer!</blockquote>
+      </article>
+      <article class="client-mueller">
+        <img
+          src="images/vorstand.jpg"
+          alt="Vorstand der Müller AG"
+          class="testimonial"
+        />
+        <div class="client-info">
+          <p>Vorstand Müller AG</p>
+          <cite>KR Ernst Anker, Dr. Florian Eisner</cite>
+          <blockquote>
+            Das Store-Konzept von Alex Mayer hat unsere größten Erwartungen
+            übertroffen.
+          </blockquote>
+        </div>
+      </article>
+      <article class="quotation-mark">
+        <img src="images/quotation_mark.svg" alt="Zitatzeichen" />
+      </article>
+    </div>
+  </section>
+</main>
