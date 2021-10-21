@@ -16,7 +16,7 @@ footer {
 
     h2 {
       color: white;
-      font-size: 30px;
+      font-size: $text-font-size;
       margin: 0.5em 0 0.2em 0;
     }
 
@@ -66,7 +66,6 @@ footer {
       }
 
       @media screen and (max-width: $bp-desktop) {
-
         display: block;
 
         nav {
@@ -84,7 +83,6 @@ footer {
     }
 
     @media screen and (max-width: $bp-desktop) {
-
       padding: 1em;
 
       p {
@@ -105,5 +103,4 @@ footer {
       }
     }
   }
-
 }

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sass --watch src/sass:src",
+    "serve": "sass --watch src/sass:dist",
     "build": "eleventy && sass --quiet src/sass:dist && cp -R src/favicons dist/favicons && cp -R src/fonts dist/fonts && cp -R src/images dist/images && cp -R src/js dist/js && rm dist/style.css.map"
   },
   "repository": {
