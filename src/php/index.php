@@ -85,41 +85,79 @@
       <section id="services" class="max-width-container">
         <h2>Leistungen</h2>
         <ul>
-          <li class="services-design"><a href="">Design</a></li>
-          <li class="services-strategy"><a href="">Strategie</a></li>
-          <li class="services-consulting"><a href="">Consulting</a></li>
+        <?php
+            $services_query = new WP_Query('order=DESC&cat=3');
+
+            if ($services_query->have_posts()) :
+              while ($services_query->have_posts()) :
+                $services_query->the_post(); ?>
+                <li style="background-image: url(<?php the_post_thumbnail_url() ?>);">
+                  <a href="<?php the_permalink(); ?>">
+                    <?php the_title(); ?>
+                  </a>
+                </li>
+              <?php endwhile;
+            else : ?>
+              <li>Vielleicht haben wir bald Services...</li>
+          <?php endif;
+          wp_reset_postdata(); ?>
         </ul>
       </section>
 
       <section id="news" class="max-width-container">
         <h2>News</h2>
         <ul>
-          <li>
-            <a href="/news/365-postkarten/">365 Postkarten</a>
-            - Eine Liebeserklärung für jeden Tag!
-            <a href="/news/365-postkarten/">[mehr erfahren]</a>
-          </li>
+        <?php
+          $news_query = new WP_Query('order=DESC&cat=2&posts_per_page=3');
 
-          <li>
-            <a href="/news/cmyk-erklaert/">CMYK erklärt</a>
-            - der neueste <a href="/news/cmyk-erklaert">Blog</a>-Eintrag!
-            <a href="/news/cmyk-erklaert/">[mehr erfahren]</a>
-          </li>
-
-          <li>
-            <a href="/news/award-nominierung/">Award Nominierung</a>
-            - tolle News: Ich bin bei der Endauswahl 2020!
-            <a href="/news/award-nominierung/">[mehr erfahren]</a>
-          </li>
+          if ($news_query->have_posts()) :
+            while ($news_query->have_posts()) :
+              $news_query->the_post(); ?>
+              <li>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                - <?php the_content(); ?>
+                <a href="<?php the_permalink(); ?>">[mehr erfahren]</a>
+              </li>
+            <?php endwhile;
+          else : ?>
+            <li>Erster Post demnächst...</li>
+        <?php endif;
+        wp_reset_postdata(); ?>
         </ul>
       </section>
 
       <section id="clients" class="max-width-container">
         <h2>Referenzen</h2>
         <div class="clients-grid">
+          <?php
+              $clients_query = new WP_Query('order=ASC&cat=4&posts_per_page=3');
+
+              if ($clients_query->have_posts()) :
+                while ($clients_query->have_posts()) :
+                  $clients_query->the_post(); ?>
+                  <article>
+                    <?php the_post_thumbnail(); ?>
+                    <div class='client-info'>
+                      <cite> <?php the_title(); ?> </cite>
+                      <p> <?php the_field('role'); ?> </p>
+                    </div>
+                    <blockquote>
+                      <?= wp_strip_all_tags(get_the_content()) ?>
+                    </blockquote>
+                  </article>
+                <?php endwhile;
+              else : ?>
+                <article>Keiner mag uns :(</article>
+            <?php endif;
+            wp_reset_postdata(); ?>
+
+          <article class="quotation-mark">
+            <img src="<?= get_template_directory_uri() . '/images/quotation_mark.svg' ?>" alt="Zitatzeichen" />
+          </article>
+          <!--
           <article class="client-tina">
             <img
-              src="<?= get_template_directory_uri(); ?>/images/dina-meyer.jpg"
+              src="/images/dina-meyer.jpg"
               alt="Tina Ubuntu"
               class="testimonial"
             />
@@ -134,7 +172,7 @@
           </article>
           <article class="client-tom">
             <img
-              src="<?= get_template_directory_uri(); ?>/images/thomas-meyer.jpg"
+              src="/images/thomas-meyer.jpg"
               alt="Tom Mayer"
               class="testimonial"
             />
@@ -148,7 +186,7 @@
           </article>
           <article class="client-mueller">
             <img
-              src="<?= get_template_directory_uri(); ?>/images/vorstand.jpg"
+              src="/images/vorstand.jpg"
               alt="Vorstand der Müller AG"
               class="testimonial"
             />
@@ -162,8 +200,9 @@
             </div>
           </article>
           <article class="quotation-mark">
-            <img src="<?= get_template_directory_uri(); ?>/images/quotation_mark.svg" alt="Zitatzeichen" />
+            <img src="/images/quotation_mark.svg" alt="Zitatzeichen" />
           </article>
+          -->
         </div>
       </section>
     </main>

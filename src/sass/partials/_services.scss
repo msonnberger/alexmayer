@@ -1,7 +1,6 @@
 @import 'variables';
 
 section#services {
-
   ul {
     width: 100%;
     display: flex;
@@ -16,6 +15,10 @@ section#services {
     text-align: center;
     border-radius: $border-radius;
     font-size: $text-font-size;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 4em;
 
     a {
       display: block;
@@ -29,53 +32,26 @@ section#services {
       }
     }
 
-    &.services-design {
-      background: #fffbdb;
-      background-image: url('./images/design.svg');
-      background-size: 60%;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position-y: 4em;
+    &:nth-child(3n + 1) {
+      background-color: #fffbdb;
     }
 
-    &.services-strategy {
-      background: #d4edfc;
-      background-image: url('./images/strategy.svg');
-      background-size: 60%;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position-y: 4em;
+    &:nth-child(3n + 2) {
+      background-color: #d4edfc;
     }
 
-    &.services-consulting {
-      background: #e2edd8;
-      background-image: url('./images/consulting.svg');
-      background-size: 60%;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position-y: 4em;
+    &:nth-child(3n + 3) {
+      background-color: #e2edd8;
     }
   }
 
   @media screen and (max-width: $bp-desktop) {
-
     ul {
       flex-direction: column;
     }
 
     li {
-      &.services-design {
-        background-size: min(50%, 200px);
-      }
-
-      &.services-strategy {
-        background-size: min(50%, 200px);
-      }
-
-      &.services-consulting {
-        background-size: min(50%, 200px);
-      }
+      background-size: min(50%, 200px);
     }
-
   }
 }
