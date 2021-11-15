@@ -154,55 +154,6 @@
           <article class="quotation-mark">
             <img src="<?= get_template_directory_uri() . '/images/quotation_mark.svg' ?>" alt="Zitatzeichen" />
           </article>
-          <!--
-          <article class="client-tina">
-            <img
-              src="/images/dina-meyer.jpg"
-              alt="Tina Ubuntu"
-              class="testimonial"
-            />
-            <div class="client-info">
-              <cite>Tina Ubuntu</cite>
-              <p>CEO headless Ltd.</p>
-            </div>
-            <blockquote>
-              Alex‘ Redesign hat maßgeblich mitgeholfen, unseren Umsatz um 20%
-              in die Hohe zu treiben!
-            </blockquote>
-          </article>
-          <article class="client-tom">
-            <img
-              src="/images/thomas-meyer.jpg"
-              alt="Tom Mayer"
-              class="testimonial"
-            />
-            <div class="client-info">
-              <cite>Tom Herzog</cite>
-              <p>Cutter‘s Finest</p>
-            </div>
-            <blockquote>
-              Große Webkunst – keine Kunst mit Alex Mayer!
-            </blockquote>
-          </article>
-          <article class="client-mueller">
-            <img
-              src="/images/vorstand.jpg"
-              alt="Vorstand der Müller AG"
-              class="testimonial"
-            />
-            <div class="client-info">
-              <p>Vorstand Müller AG</p>
-              <cite>KR Ernst Anker, Dr. Florian Eisner</cite>
-              <blockquote>
-                Das Store-Konzept von Alex Mayer hat unsere größten Erwartungen
-                übertroffen.
-              </blockquote>
-            </div>
-          </article>
-          <article class="quotation-mark">
-            <img src="/images/quotation_mark.svg" alt="Zitatzeichen" />
-          </article>
-          -->
         </div>
       </section>
     </main>
