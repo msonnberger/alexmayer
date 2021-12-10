@@ -86,7 +86,9 @@ h2 {
   margin: 1.2em 0 1em 0;
 }
 
-h1, h2, a {
+h1,
+h2,
+a {
   color: #009ee3;
 }
 
@@ -102,6 +104,10 @@ section {
   .max-width-container {
     padding: 0 1em;
   }
+}
+
+p {
+  font-size: 1.6rem;
 }
 
 button {
@@ -964,31 +970,32 @@ section#top-nav {
   padding-bottom: 1em;
   margin-bottom: 0;
 }
-section#top-nav nav ul {
+section#top-nav .menu-navigation-container ul {
   display: flex;
   font-size: 1.8em;
 }
-section#top-nav nav ul li {
+section#top-nav .menu-navigation-container ul li {
   margin: 0 0.3em;
 }
-section#top-nav nav ul a {
-  color: black;
-  cursor: pointer;
-  transition: color 100ms;
-}
-section#top-nav nav ul a:hover {
-  color: #009ee3;
-}
-section#top-nav nav ul a.active {
+section#top-nav .menu-navigation-container ul li.current-menu-item a {
   color: #009ee3;
   border-bottom: 2px solid #009ee3;
 }
 @media screen and (max-width: 1050px) {
-  section#top-nav nav ul a.active {
+  section#top-nav .menu-navigation-container ul li.current-menu-item a {
     background: #009ee3;
     color: white;
     border-bottom: none;
   }
+}
+section#top-nav .menu-navigation-container ul a {
+  color: black;
+  cursor: pointer;
+  transition: color 100ms;
+  text-decoration: none;
+}
+section#top-nav .menu-navigation-container ul a:hover {
+  color: #009ee3;
 }
 
 @media screen and (min-width: 1050px) {
@@ -997,32 +1004,32 @@ section#top-nav nav ul a.active {
   }
 }
 @media screen and (max-width: 1050px) {
-  section#top-nav nav {
+  section#top-nav .menu-navigation-container {
     position: absolute;
     left: 0;
     right: 0;
     transform: translateY(-400px);
     transition: transform 200ms ease-in-out;
   }
-  section#top-nav nav.is-active {
+  section#top-nav .menu-navigation-container.is-active {
     transform: translateY(70px);
   }
-  section#top-nav nav ul {
+  section#top-nav .menu-navigation-container ul {
     flex-direction: column;
     align-items: center;
   }
-  section#top-nav nav ul li,
-section#top-nav nav ul a {
+  section#top-nav .menu-navigation-container ul li,
+section#top-nav .menu-navigation-container ul a {
     width: 100%;
   }
-  section#top-nav nav ul li {
+  section#top-nav .menu-navigation-container ul li {
     border-bottom: 1px solid black;
     background: white;
   }
-  section#top-nav nav ul li:first-child {
+  section#top-nav .menu-navigation-container ul li:first-child {
     border-top: 1px solid black;
   }
-  section#top-nav nav ul a {
+  section#top-nav .menu-navigation-container ul a {
     display: block;
     text-align: center;
     padding: 1.5rem 0;

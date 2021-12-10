@@ -10,6 +10,11 @@ function cc_mime_types($mimes) {
   return $mimes;
 }
 
+function register_my_menus() {
+  register_nav_menus(array('main-menu' => __('Navigation')));
+}
+
+add_action('init', 'register_my_menus');
 add_filter('upload_mimes', 'cc_mime_types');
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 add_theme_support('title-tag');

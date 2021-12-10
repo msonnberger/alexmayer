@@ -57,15 +57,7 @@
     <header>
       <section id="top-nav">
         <h1>Alex Mayer</h1>
-        <nav>
-          <ul>
-            <li><a class="active">Start</a></li>
-            <li><a>Leistungen</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Über mich</a></li>
-            <li><a>Kontakt</a></li>
-          </ul>
-        </nav>
+        <?php wp_nav_menu(array('theme_location' => 'Navigation')); ?>
         <button class="hamburger hamburger--slider" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
