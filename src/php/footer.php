@@ -1,7 +1,7 @@
 <footer>
       <div class="max-width-container">
         <div class="footer-top">
-          <p>© Alex Mayer</p>
+          <p>© Alex Mayer <?php echo date("Y"); ?></p>
           <?php wp_nav_menu(array('menu' => 'Footer')); ?>
           <p>
             Demo Wordpress Seite im Rahmen der LV 'Content Management Systeme'

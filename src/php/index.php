@@ -43,7 +43,7 @@
           $news_query->the_post(); ?>
           <li>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            - <?php the_content(); ?>
+            - <?php the_excerpt(); ?>
             <a href="<?php the_permalink(); ?>">[mehr erfahren]</a>
           </li>
         <?php endwhile;
