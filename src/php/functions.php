@@ -11,7 +11,7 @@ function cc_mime_types($mimes) {
 }
 
 function register_my_menus() {
-  register_nav_menus(array('main-menu' => __('Navigation')));
+  register_nav_menus(array('main-menu' => __('Navigation'), 'footer-menu' => __('Footer')));
 }
 
 add_action('init', 'register_my_menus');

@@ -2,13 +2,7 @@
       <div class="max-width-container">
         <div class="footer-top">
           <p>© Alex Mayer</p>
-          <nav>
-            <ul>
-              <li>
-                <a href="">Impressum</a> | <a href="">Datenschutzerklärung</a>
-              </li>
-            </ul>
-          </nav>
+          <?php wp_nav_menu(array('menu' => 'Footer')); ?>
           <p>
             Demo Wordpress Seite im Rahmen der LV 'Content Management Systeme'
             an der FH Salzburg von Markus Rinnerberger und Martin Sonnberger.
