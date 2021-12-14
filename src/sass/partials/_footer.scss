@@ -47,17 +47,21 @@ footer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
 
-      nav {
-        text-align: right;
-        margin: 0.5rem 0;
-      }
-
       ul {
         list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
       }
 
       li {
         font-size: $text-font-size;
+        padding-left: 0.5em;
+
+        &:first-child {
+          padding-right: 0.5em;
+          padding-left: 0;
+          border-right: 2px solid white;
+        }
       }
 
       a:hover {
@@ -68,15 +72,12 @@ footer {
       @media screen and (max-width: $bp-desktop) {
         display: block;
 
-        nav {
-          text-align: left;
+        ul {
+          padding: 0;
+          justify-content: flex-start;
 
-          ul {
-            padding: 0;
-
-            li {
-              font-size: 1.4em;
-            }
+          li {
+            font-size: 1.4em;
           }
         }
       }

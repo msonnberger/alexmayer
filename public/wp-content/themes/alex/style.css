@@ -1415,15 +1415,19 @@ footer .max-width-container .footer-top {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-footer .max-width-container .footer-top nav {
-  text-align: right;
-  margin: 0.5rem 0;
-}
 footer .max-width-container .footer-top ul {
   list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
 }
 footer .max-width-container .footer-top li {
   font-size: 1.6em;
+  padding-left: 0.5em;
+}
+footer .max-width-container .footer-top li:first-child {
+  padding-right: 0.5em;
+  padding-left: 0;
+  border-right: 2px solid white;
 }
 footer .max-width-container .footer-top a:hover {
   text-decoration: none;
@@ -1433,13 +1437,11 @@ footer .max-width-container .footer-top a:hover {
   footer .max-width-container .footer-top {
     display: block;
   }
-  footer .max-width-container .footer-top nav {
-    text-align: left;
-  }
-  footer .max-width-container .footer-top nav ul {
+  footer .max-width-container .footer-top ul {
     padding: 0;
+    justify-content: flex-start;
   }
-  footer .max-width-container .footer-top nav ul li {
+  footer .max-width-container .footer-top ul li {
     font-size: 1.4em;
   }
 }
