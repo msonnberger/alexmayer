@@ -2,7 +2,7 @@
 <?php include 'header.php' ?>
 <section id="hero" style="background-image: url(<?php the_post_thumbnail_url() ?>);">
   <div>
-    <span>Glänzende Ideen für leuchtende Augen</span>
+    <span><?php the_field('hero_text'); ?></span>
   </div>
   <button>Angebot einholen</button>
 </section>
