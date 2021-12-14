@@ -1,11 +1,11 @@
 <?php include 'head.php' ?>
 <?php include 'header.php' ?>
 <section id="hero" style="background-image: url(<?php the_post_thumbnail_url() ?>);">
-    <div>
-      <span>Glänzende Ideen für leuchtende Augen</span>
-    </div>
-    <button>Angebot einholen</button>
-  </section>
+  <div>
+    <span>Glänzende Ideen für leuchtende Augen</span>
+  </div>
+  <button>Angebot einholen</button>
+</section>
 </header>
 <main>
   <section class="max-width-container">
